@@ -1,0 +1,17 @@
+node_modules/
+.env
+encrypted_seed.txt
+request.json
+instructor_request.json
+signature.bin
+encrypted_sig.bin
+commit.txt
+enc.bin
+decrypted_seed.txt
+openssl_err.txt
+openssl_sign_err.txt
+openssl_enc_err.txt
+proof.txt
+proof_full.txt
+signature.b64
+*.log

@@ -1,0 +1,6 @@
+cron/2fa-cron text eol=lf
+encrypted_seed.txt
+node_modules/
+.env
+__pycache__/
+*.log
