@@ -14,7 +14,9 @@ def test_persistence():
     result = subprocess.run(
         ["docker", "exec", "pki-2fa-app", "cat", "/data/seed.txt"],
         capture_output=True,
-        text=True
+        text=True,
+        encoding='utf-8',
+        errors='replace'
     )
     
     if result.returncode == 0 and result.stdout.strip():
@@ -34,7 +36,9 @@ def test_persistence():
     result = subprocess.run(
         ["docker", "exec", "pki-2fa-app", "cat", "/data/seed.txt"],
         capture_output=True,
-        text=True
+        text=True,
+        encoding='utf-8',
+        errors='replace'
     )
     
     if result.returncode == 0 and result.stdout.strip():
@@ -64,7 +68,9 @@ def test_cron_job():
     result = subprocess.run(
         ["docker", "exec", "pki-2fa-app", "wc", "-l", "/cron/last_code.txt"],
         capture_output=True,
-        text=True
+        text=True,
+        encoding='utf-8',
+        errors='replace'
     )
     lines_before = int(result.stdout.split()[0]) if result.returncode == 0 else 0
     print(f"Cron log lines before wait: {lines_before}")
@@ -78,7 +84,9 @@ def test_cron_job():
     result = subprocess.run(
         ["docker", "exec", "pki-2fa-app", "cat", "/cron/last_code.txt"],
         capture_output=True,
-        text=True
+        text=True,
+        encoding='utf-8',
+        errors='replace'
     )
     
     if result.returncode == 0 and result.stdout.strip():
