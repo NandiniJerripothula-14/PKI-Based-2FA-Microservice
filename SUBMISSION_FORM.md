@@ -26,7 +26,7 @@ https://github.com/NandiniJerripothula-14/PKI-Based-2FA-MicroService
 ### 2. Commit Hash (40-character hex)
 **Value to submit:**
 ```
-a9e6654773002c27bf9c02f81e0fd66c746aa206
+b8d5a0c99613e815ee84962bd7bbf580f184d0ae
 ```
 
 ✅ **Verification:**
@@ -96,7 +96,7 @@ hwpWnckygyMyQzaXdpM8/3ae7ImRFQThP7e84oroiiuAIuYCI1czK/Vdu/w/OWfV4D0hD2hjPWLh6QfZ
 
 **Value to submit:**
 ```
-[PASTE_HERE: Run python generate_final_proof.py after replacing instructor_public.pem]
+[PENDING: Run `python generate_final_proof.py` after replacing `instructor_public.pem` with the real instructor key.]
 ```
 
 ⚠️ **This value cannot be generated until you provide the real instructor public key.**
